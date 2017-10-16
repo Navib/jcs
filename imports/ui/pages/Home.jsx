@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
 
-/* import Footer from '../../ui/components/Footer/footer';*/
+import Nav from '../../ui/components/Nav/nav';
+import Intro from '../../ui/components/Intro/intro';
+import Circle from '../../ui/components/Circle/circle';
 
 
 // This component - represents a single page
 export const Home = () => <div>
-    <div className="container-fluid  jcs-home" id="desktop-sites">
-      home
+    <div className="jcs-home" id="desktop-sites">
+      <Nav />
+      <Intro />
+      <Circle />
     </div>
 </div>

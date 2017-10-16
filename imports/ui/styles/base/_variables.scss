@@ -1,0 +1,19 @@
+/* Custom CSS CLASSES */
+.jcs-flex-center {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.jcs-flex-end {
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+.jcs-flex-start {
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}

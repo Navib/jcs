@@ -1,0 +1,42 @@
+/* Nav Bar Styles */
+.jcs-nav {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+
+    .jcs-menu-box {
+      width: 100%;
+
+      div {
+        a {
+            font-size: 32px;
+            cursor: pointer;
+          }
+          a:hover {
+            text-decoration: none;
+          }
+      }
+    }
+    .jcs-menu {
+        left: 0;
+        border-bottom: 1px solid black;
+        width: 200px;
+        height: 50px;
+        position: absolute;
+        top: 3em;
+
+
+    }
+
+    .jcs-contact {
+        right: 0;
+        border-bottom: 1px solid black;
+        width: 200px;
+        height: 50px;
+        position: absolute;
+        top: 3em;
+    }
+}

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import {TweenMax, Power2, TimelineLite} from "gsap";
+//import {TweenMax, Power2, TimelineLite} from "gsap";
 
 class Nav extends Component {
   componentDidMount() {
-}
+  }
   menuItems() {
   return [
     {_id:1, name:'Home', src:'/', page_id:'page-1'},
@@ -21,8 +21,17 @@ renderMenu() {
 }
   render() {
     return (
-      <nav className="oc-nav">
-        nav
+      <nav className="jcs-nav">
+        <div className="jcs-menu-box">
+          <div className="container jcs-menu jcs-flex-end">
+            <a href="#" className="launch-menu">Menu</a>
+          </div>
+        </div>
+        <div className="jcs-menu-box">
+          <div className="container jcs-contact jcs-flex-start">
+            <a href="#" className="launch-contact">Contact</a>
+          </div>
+        </div>
       </nav>
     )
   }
