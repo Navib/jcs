@@ -1,8 +1,55 @@
 import React, { Component } from 'react';
 //import {TweenMax, Power2, TimelineLite} from "gsap";
 
+import NavOverlay from './navOverlay';
+
 class Nav extends Component {
+  launchNav() {
+    let showNav = false;
+    $('.launch-menu').on('click', function() {
+      showNav = !showNav;
+
+      if(showNav) {
+        $('.jcs-nav-overlay-wrapper').css({
+          visibility: 'visible',
+          opacity: 1,
+          'z-index': '1'
+        });
+        $('.jcs-nav-third').css({
+          visibility: 'visible',
+          opacity: 1,
+          width: '33%',
+          'z-index': '1'
+        });
+        $('.jcs-nav-two-third').css({
+          visibility: 'visible',
+          opacity: 1,
+          width: '67%',
+          'z-index': '1'
+        });
+      }else {
+        $('.jcs-nav-overlay-wrapper').css({
+          visibility: 'hidden',
+          opacity: 0,
+          'z-index':'-1'
+        });
+        $('.jcs-nav-third').css({
+          visibility: 'hidden',
+          opacity: 1,
+          width: '0%',
+          'z-index': '-1'
+        });
+        $('.jcs-nav-two-third').css({
+          visibility: 'hidden',
+          opacity: 0,
+          width: '67%',
+          'z-index': '-1'
+        });
+      }
+    });
+  }
   componentDidMount() {
+    this.launchNav();
   }
   menuItems() {
   return [
