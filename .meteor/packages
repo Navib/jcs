@@ -24,7 +24,10 @@ react-meteor-data
 
 twbs:bootstrap
 kadira:flow-router
-fortawesome:fontawesome
+
+pagebakers:ionicons
+#fortawesome:fontawesome
+
 johnantoni:meteor-normalize
 fourseven:scss
 mrt:jquery-mousewheel

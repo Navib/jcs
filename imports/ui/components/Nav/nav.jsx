@@ -6,44 +6,61 @@ import NavOverlay from './navOverlay';
 class Nav extends Component {
   launchNav() {
     let showNav = false;
-    $('.launch-menu').on('click', function() {
+    $('.launch-menu, #exit-nav').on('click', function() {
       showNav = !showNav;
 
       if(showNav) {
         $('.jcs-nav-overlay-wrapper').css({
-          visibility: 'visible',
-          opacity: 1,
-          'z-index': '1'
+          'z-index':10,
         });
         $('.jcs-nav-third').css({
           visibility: 'visible',
           opacity: 1,
-          width: '33%',
+          width: '25%',
           'z-index': '1'
         });
         $('.jcs-nav-two-third').css({
           visibility: 'visible',
           opacity: 1,
-          width: '67%',
-          'z-index': '1'
+          width: '100%',
+          'z-index': '0'
         });
+        $('.jcs-menu').css({
+          left:'20%',
+        });
+        $('.jcs-nav-third').one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
+          $('#exit-nav').css({
+            opacity:1,
+            transform:'scale(1)',
+            visibility: 'visible',
+          });
+         });
       }else {
-        $('.jcs-nav-overlay-wrapper').css({
-          visibility: 'hidden',
-          opacity: 0,
-          'z-index':'-1'
+        $('.jcs-nav-two-third').one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
+          $('.jcs-nav-overlay-wrapper').css({
+            'z-index':0,
+          });
+          $('#exit-nav').css({
+            transform:'scale(0)',
+            visibility: 'hidden',
+            opacity:0,
+          });
         });
+
         $('.jcs-nav-third').css({
           visibility: 'hidden',
           opacity: 1,
           width: '0%',
-          'z-index': '-1'
+          'z-index': '1'
         });
         $('.jcs-nav-two-third').css({
           visibility: 'hidden',
           opacity: 0,
-          width: '67%',
-          'z-index': '-1'
+          width: '100%',
+          'z-index': '0'
+        });
+        $('.jcs-menu').css({
+          left:0,
         });
       }
     });
@@ -72,6 +89,7 @@ renderMenu() {
         <div className="jcs-menu-box">
           <div className="container jcs-menu jcs-flex-end">
             <a href="#" className="launch-menu">Menu</a>
+            <i className="icon ion-minus-circled" id="exit-nav" aria-hidden="true"></i>
           </div>
         </div>
         <div className="jcs-menu-box">

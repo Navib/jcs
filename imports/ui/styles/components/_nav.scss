@@ -1,42 +1,57 @@
 /* Nav Bar Styles */
 .jcs-nav {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+
+  .jcs-menu-box {
     width: 100%;
-    margin: 0 auto;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 99;
 
-    .jcs-menu-box {
-      width: 100%;
+    div {
+      a {
+        font-size: 32px;
+        cursor: pointer;
+      }
 
-      div {
-        a {
-            font-size: 32px;
-            cursor: pointer;
-          }
-          a:hover {
-            text-decoration: none;
-          }
+      a:hover {
+        text-decoration: none;
       }
     }
-    .jcs-menu {
-        left: 0;
-        border-bottom: 1px solid black;
-        width: 200px;
-        height: 50px;
-        position: absolute;
-        top: 3em;
+  }
 
+  .jcs-menu {
+    left: 0;
+    border-bottom: 1px solid black;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 3em;
+    transition: all 0.7s ease-in-out;
+    transition-delay: 0.1s;
+  }
 
-    }
+  .jcs-contact {
+    right: 0;
+    border-bottom: 1px solid black;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 3em;
+  }
 
-    .jcs-contact {
-        right: 0;
-        border-bottom: 1px solid black;
-        width: 200px;
-        height: 50px;
-        position: absolute;
-        top: 3em;
-    }
+  #exit-nav {
+    position: absolute;
+    left: -22px;
+    bottom: -24px;
+    font-size: 32px;
+    font-weight: 200;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+  }
 }

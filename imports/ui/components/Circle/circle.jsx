@@ -3,30 +3,36 @@ import React, { Component } from 'react';
 class Circle extends Component {
   componentDidMount(){
     $('.jcs-cta-left').mouseover(function(){
-      $('.jcs-circle-wrapper').css({
-        background:'yellow',
+      $('.opacity-image-screen-1').css({
+        opacity:1,
+        transform:'scale(1)',
       });
     });
     $('.jcs-cta-left').mouseleave(function(){
-      $('.jcs-circle-wrapper').css({
-        background:'none',
+      $('.opacity-image-screen-1').css({
+        opacity:'0',
+        transform:'scale(1.1)',
       });
     });
     $('.jcs-cta-right').mouseover(function(){
-      $('.jcs-circle-wrapper').css({
-        background:'red',
+      $('.opacity-image-screen-2').css({
+        opacity:1,
+        transform:'scale(1)',
       });
     });
     $('.jcs-cta-right').mouseleave(function(){
-      $('.jcs-circle-wrapper').css({
-        background:'none',
+      $('.opacity-image-screen-2').css({
+        opacity:'0',
+        transform:'scale(1.1)',
       });
     });
   }
 
   render(){
     return(
-      <div class="jcs-circle-wrapper">
+      <div className="jcs-circle-wrapper">
+        <div className="opacity-image-screen-1"></div>
+        <div className="opacity-image-screen-2"></div>
         <div className="jcs-semi-circle" id="jcs-left-circle">
           <a href="#" className="jcs-cta-left ">
             <div className="no-box jcs-flex-center">Whats This!</div>

@@ -59,6 +59,7 @@ newswim:particles@2.0.0
 npm-mongo@2.2.33
 observe-sequence@1.0.16
 ordered-dict@1.0.9
+pagebakers:ionicons@2.0.1_1
 promise@0.9.0
 random@1.0.10
 react-meteor-data@0.2.14
