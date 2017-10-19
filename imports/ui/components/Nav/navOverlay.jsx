@@ -1,5 +1,7 @@
 import React , { Component } from 'react';
 
+
+import NavList from './navList.jsx';
 class NavOverlay extends Component {
   componentDidMount(){
   }
@@ -7,7 +9,9 @@ class NavOverlay extends Component {
   render() {
     return(
       <div className="jcs-nav-overlay-wrapper">
-        <div className="jcs-nav-third"></div>
+        <div className="jcs-nav-third">
+          <NavList />
+        </div>
         <div className="jcs-nav-two-third"></div>
       </div>
     )

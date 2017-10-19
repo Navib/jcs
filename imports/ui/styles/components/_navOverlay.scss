@@ -16,6 +16,10 @@
     z-index: -1;
     opacity: 1;
     transition: all 0.8s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
   }
 
   .jcs-nav-two-third {

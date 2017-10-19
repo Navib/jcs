@@ -31,8 +31,12 @@ class Circle extends Component {
   render(){
     return(
       <div className="jcs-circle-wrapper">
-        <div className="opacity-image-screen-1"></div>
-        <div className="opacity-image-screen-2"></div>
+        <div className="opacity-image-screen-1">
+          <div className="black-overlay-2"></div>
+        </div>
+        <div className="opacity-image-screen-2">
+          <div className="black-overlay"></div>
+        </div>
         <div className="jcs-semi-circle" id="jcs-left-circle">
           <a href="#" className="jcs-cta-left ">
             <div className="no-box jcs-flex-center">Whats This!</div>
