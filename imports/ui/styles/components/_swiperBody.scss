@@ -14,7 +14,6 @@
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: red;
       /* Center slide text vertically */
       display: -webkit-box;
       display: -ms-flexbox;
@@ -30,24 +29,38 @@
       align-items: center;
       width: 600px;
       margin: 0 auto;
+      margin-left: 2em;
+    }
+
+    .main-swiper-img {
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 3px 2px 12px rgba(0,0,0,.6);
     }
 
     .swiper-pagination {
-      left: calc(4% - 13px) !important;
-      top: 4em !important;
       right: auto !important;
+      width: 6px;
 
       .cs-picker {
         display: flex;
         flex-direction: column;
         position: absolute;
-        left: 1.5em;
+        left: 0;
+
+        span {
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+        }
+
+        span:hover {
+          opacity: 0.7;
+        }
 
         img {
           width: 80px;
         }
       }
-
     }
   }
 }
