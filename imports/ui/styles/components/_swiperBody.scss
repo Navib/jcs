@@ -5,11 +5,13 @@
 *******************************/
 .actor-profile-wrapper {
   height: 100vh;
-  width: 75%;
+  width: 100%;
+  display: flex;
 
   .swiper-container {
     width: 100%;
     height: 100%;
+    flex-basis: 70%;
 
     .swiper-slide {
       text-align: center;
@@ -28,14 +30,27 @@
       -webkit-align-items: center;
       align-items: center;
       width: 600px;
-      margin: 0 auto;
-      margin-left: 2em;
+      margin: 0 auto 0 2em;
     }
 
     .main-swiper-img {
       width: 100%;
       max-width: 600px;
       box-shadow: 3px 2px 12px rgba(0,0,0,.6);
+    }
+
+    .swiper-button-prev {
+      top: 20px !important;
+      transform: rotate(90deg) translateX(-50%) !important;
+      left: 50% !important;
+      margin: 0 !important;
+    }
+    .swiper-button-next {
+      bottom: 0 !important;
+      transform: rotate(90deg) translateX(-50%) !important;
+      left: 50% !important;
+      top: inherit !important;
+      margin: 0 !important;
     }
 
     .swiper-pagination {

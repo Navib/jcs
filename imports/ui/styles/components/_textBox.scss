@@ -1,0 +1,37 @@
+/*TextBox Styles*/
+.jcs-text-box {
+  border: 1px solid black;
+  width: 30%;
+  flex-basis: 50%;
+  margin: 8em 6em;
+
+  .jcs-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3em;
+
+    .jcs-bx-header {
+      font-size: 26px;
+      width: 100%;
+      text-transform: uppercase;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .jcs-bx-description {
+      font-size: calc(1em + 2px);
+      width: 100%;
+      line-height: calc(1em + 7px);
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .jcs-bx-social {
+      background: black;
+      height: 30px;
+      width: 100%;
+    }
+  }
+}
