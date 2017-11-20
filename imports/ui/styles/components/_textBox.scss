@@ -29,9 +29,64 @@
     }
 
     .jcs-bx-social {
-      background: black;
-      height: 30px;
       width: 100%;
+
+      i {
+        font-size: calc(1.8em + 2px);
+      }
+
+      .actor-sites {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+
+        li {
+          list-style-type: none;
+        }
+
+        .social-bg {
+          background-image: url("images/backstage.png");
+          background-size: 65px;
+          background-color: gray;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 25px;
+          padding: 0 40px;
+          border-radius: 20px;
+          flex-basis: 50%;
+          margin: 0 20px;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+        }
+
+        .social-bg:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    .jcs-menu-icon {
+      width: 100%;
+
+      .social-list {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        padding: 0;
+        align-items: center;
+
+        li {
+          flex-basis: 33%;
+          list-style-type: none;
+          cursor: pointer;
+          margin: 6px;
+          text-align: center;
+
+          i {
+            font-size: 2em;
+          }
+        }
+      }
     }
   }
 }
