@@ -25,7 +25,7 @@ class TextBox extends Component {
               <li><i className="icon ion-ios-film" aria-hidden="true"></i></li>
               <li><i className="icon ion-film-marker" aria-hidden="true"></i></li>
               <li><i className="icon ion-social-vimeo" aria-hidden="true"></i></li>
-              <li><i className="ion-ios-email-outline" aria-hidden="true"></i></li>
+              <li><i className="icon ion-android-textsms" aria-hidden="true"></i></li>
             </ul>
           </div>
         </div>
