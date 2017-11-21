@@ -36,7 +36,7 @@
     .main-swiper-img {
       width: 100%;
       max-width: 600px;
-      box-shadow: 3px 2px 12px rgba(0,0,0,.6);
+      box-shadow: 0px 5px 26px 0px rgba(0,0,0,0.22), 0px 20px 28px 0px rgba(0,0,0,0.30);
     }
 
     .swiper-button-prev {
@@ -52,10 +52,14 @@
       top: inherit !important;
       margin: 0 !important;
     }
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+      background-color: white !important;
+    }
 
     .swiper-pagination {
       right: auto !important;
       width: 6px;
+
 
       .cs-picker {
         display: flex;

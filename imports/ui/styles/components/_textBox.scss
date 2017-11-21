@@ -1,9 +1,11 @@
 /*TextBox Styles*/
 .jcs-text-box {
-  border: 1px solid black;
+  //border: 1px solid black;
   width: 30%;
   flex-basis: 50%;
   margin: 8em 6em;
+  box-shadow: 0px 5px 26px 0px rgba(0,0,0,0.22), 0px 20px 28px 0px rgba(0,0,0,0.30);
+  background: white;
 
   .jcs-content {
     display: flex;
@@ -97,7 +99,7 @@
 }
 
 
-body{
+.actor-profile-wrapper{
 	margin:0;
 	padding:0;
 	font-family:"arial",heletica,sans-serif;
