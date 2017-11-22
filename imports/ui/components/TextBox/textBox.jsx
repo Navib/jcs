@@ -6,7 +6,15 @@ class TextBox extends Component {
     }
 
   componentDidMount() {
-
+    $('.video-btn').on('click', function(){
+      $('.video-slide-wrapper').css({width:'100%'});
+      $('.exit-video-slide').css({display:'block'});
+      $('.video-container').css({display:'block'});
+      setTimeout(function(){
+        $('.exit-video-slide').css({opacity:1});
+        $('.video-container').css({opacity:1});
+      },1400)
+    });
   }
   render(){
     return (
@@ -22,7 +30,7 @@ class TextBox extends Component {
           </div>
           <div className="jcs-menu-icon">
             <ul className="social-list">
-              <li><i className="icon ion-ios-film" aria-hidden="true"></i></li>
+              <li><i className="icon ion-ios-film video-btn" aria-hidden="true"></i></li>
               <li><i className="icon ion-film-marker" aria-hidden="true"></i></li>
               <li><i className="icon ion-social-vimeo" aria-hidden="true"></i></li>
               <li><i className="icon ion-android-textsms" aria-hidden="true"></i></li>
