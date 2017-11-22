@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {TweenMax, Power2, TimelineLite} from "gsap";
 
 class VideoSlide extends Component {
   constructor(props) {
@@ -9,9 +10,17 @@ class VideoSlide extends Component {
   }
   exitSlide(){
     $('.exit-video-slide').on('click', function(){
-      $('.video-slide-wrapper').css({width:'0%'})
-      $('.exit-video-slide').css({display:'none'});
-      $('.video-container').css({display:'none'});
+      setTimeout(function(){
+        let vidSlideWraper = $('.video-slide-wrapper');
+        TweenMax.to(vidSlideWraper, .6, {
+          width: "0%",
+          ease: Quart.easeIn,
+        });
+      },800)
+      $('.exit-video-slide').css({});
+      $('.video-container').css({});
+
+      TweenMax.staggerTo(".jcs-media-item", .3, {opacity:0, ease: Quart.easeInOut}, 0.4);
     });
   }
   ytVids() {
@@ -25,6 +34,7 @@ class VideoSlide extends Component {
 renderVids() {
   return this.ytVids().map((item) => (
     <div className="jcs-media-item" key={item._id}>
+      <div className="test">INFO TEXT</div>
         <iframe className="cs-iframe" src={item.src} allowTransparency="true" style={{background: '#ffffff' }}></iframe>
     </div>
   ))

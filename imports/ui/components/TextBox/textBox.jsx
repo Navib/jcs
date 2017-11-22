@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {TweenMax, Power2, TimelineLite} from "gsap";
 
 class TextBox extends Component {
   constructor(props) {
@@ -6,13 +7,21 @@ class TextBox extends Component {
     }
 
   componentDidMount() {
+    //Open Slide
     $('.video-btn').on('click', function(){
-      $('.video-slide-wrapper').css({width:'100%'});
+      let vidSlideWraper = $('.video-slide-wrapper');
+      TweenMax.to(vidSlideWraper, .6, {
+        width: "100%",
+        ease: Quart.easeIn,
+      });
       $('.exit-video-slide').css({display:'block'});
       $('.video-container').css({display:'block'});
       setTimeout(function(){
         $('.exit-video-slide').css({opacity:1});
         $('.video-container').css({opacity:1});
+        setTimeout(function() {
+          TweenMax.staggerTo(".jcs-media-item", .3, {opacity:1, ease: Quart.easeInOut}, 0.4);
+        }, 300);
       },1400)
     });
   }

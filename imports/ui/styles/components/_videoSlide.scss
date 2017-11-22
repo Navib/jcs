@@ -43,6 +43,8 @@
         height: 275px;
         background: white;
         margin: 10px;
+        position: relative;
+        opacity: 0;
 
         iframe {
           position: relative;
