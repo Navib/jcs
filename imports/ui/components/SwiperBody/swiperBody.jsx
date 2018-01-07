@@ -26,7 +26,7 @@ class SwiperBody extends Component {
   render(){
     return (
       <div className="actor-profile-wrapper">
-        <div className="swiper-container">
+        <div className="swiper-container main-swiper-container">
           <div className="swiper-wrapper">
             <div className="swiper-slide"><img src="/images/ohlala.jpg" className="main-swiper-img"/></div>
             <div className="swiper-slide"><div className=""><img src="/images/face-shot.jpg" className="main-swiper-img"/></div></div>
@@ -35,7 +35,7 @@ class SwiperBody extends Component {
             <div className="swiper-slide"><img src="/images/on-set-jcs.jpg" className="main-swiper-img"/></div>
           </div>
 
-          <div className="swiper-pagination"></div>
+          <div className="swiper-pagination main-swiper-pagination"></div>
 
           <div className="swiper-button-next"></div>
           <div className="swiper-button-prev"></div>

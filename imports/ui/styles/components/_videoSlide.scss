@@ -5,7 +5,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  background: red;
+  background: white;
   z-index: 999;
   transition: all 0.8s ease-in-out;
 
@@ -15,9 +15,22 @@
     left: 1em;
     font-size: 30px;
     cursor: pointer;
-    display: none;
     opacity: 0;
     transition: all 0.4s ease-in-out;
+    color: #444444;
+    font-weight: 300;
+    letter-spacing: 3px;
+  }
+
+  .video-title {
+    text-align: center;
+    position: relative;
+    margin: 0;
+    top: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    font-size: 34px !important;
   }
 
   .video-container {
@@ -38,20 +51,41 @@
       flex-wrap: wrap;
       margin-top: 1em;
 
+      .swiper-3d-container {
+        width: 100% !important;
+        height: 100%;
+        padding-top: 25vh !important;
+        padding-bottom: 50px !important;
+        zoom: 86%;
+      }
+
+      .video-3d-slide {
+        width: 400px;
+        height: 400px;
+      }
+
       .jcs-media-item {
-        flex-basis: 40%;
-        height: 275px;
-        background: white;
-        margin: 10px;
+        width: 500px;
+        height: 300px;
         position: relative;
         opacity: 0;
+        transition: all 0.3s ease-in-out;
 
         iframe {
           position: relative;
           width: 100%;
           height: 100%;
+          -webkit-box-reflect: below 8px -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.3) 0%, transparent 50%, transparent 100%);
         }
       }
+    }
+  }
+
+  .swiper-3d-pagination {
+    bottom: 12em !important;
+
+    .swiper-pagination-bullet {
+      margin: 0 8px;
     }
   }
 }

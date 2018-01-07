@@ -3,10 +3,10 @@ import Swiper from 'swiper/dist/js/swiper.min.js';
 import React from 'react';
 
 function initializeSwiper(){
-  initializeSwiperMain = new Swiper ('.swiper-container', {
+  initializeSwiperMain = new Swiper ('.main-swiper-container', {
     direction: 'vertical',
     pagination: {
-      el: '.swiper-pagination',
+      el: '.main-swiper-pagination',
       type: 'progressbar',
       },
       navigation: {

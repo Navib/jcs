@@ -12,6 +12,7 @@ function videoWrapperClose() {
     $('.exit-video-slide').css({});
     $('.video-container').css({});
 
+//Media Item on Close
     TweenMax.staggerTo(".jcs-media-item", .3, {
       opacity: 0,
       ease: Quart.easeInOut

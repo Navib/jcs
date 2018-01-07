@@ -13,12 +13,14 @@ function videoWrapperLogic() {
     setTimeout(function() {
       $('.exit-video-slide').css({opacity: 1});
       $('.video-container').css({opacity: 1});
+
+//Media Item On Open
       setTimeout(function() {
         TweenMax.staggerTo(".jcs-media-item", .3, {
           opacity: 1,
           ease: Quart.easeInOut
         }, 0.4);
-      }, 300);
+      }, 1000);
     }, 1400)
   });
 
