@@ -24,10 +24,10 @@ class TextBox extends Component {
           </div>
           <div className="jcs-menu-icon">
             <ul className="social-list">
-              <li><i className="icon ion-ios-film video-btn" aria-hidden="true"></i></li>
-              <li><i className="icon ion-film-marker" aria-hidden="true"></i></li>
-              <li><i className="icon ion-social-vimeo" aria-hidden="true"></i></li>
-              <li><i className="icon ion-android-textsms" aria-hidden="true"></i></li>
+              <li><a href="#" className="txtBdy-btn"><i className="icon ion-ios-film video-btn" aria-hidden="true"></i></a></li>
+              <li><a href="/jcs" className="txtBdy-btn jcs-btn"><i className="icon ion-film-marker " aria-hidden="true"></i></a></li>
+              <li><a href="#" className="txtBdy-btn"><i className="icon ion-social-vimeo" aria-hidden="true"></i></a></li>
+              <li><a href="#" className="txtBdy-btn contact-btn"><i className="icon ion-android-textsms" aria-hidden="true"></i></a></li>
             </ul>
           </div>
         </div>

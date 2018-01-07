@@ -1,0 +1,20 @@
+/* Contact Styles */
+
+.jcs-contact-wrapper {
+  height: 0;
+  width: 100%;
+  background: blue;
+  position: absolute;
+  bottom: 0;
+  z-index: 9999;
+
+  .exit-contact-wrapper {
+    position: relative;
+    .exit-contact-btn {
+      position: absolute;
+      color: white;
+      right: 1em;
+      top: 1em;
+    }
+  }
+}

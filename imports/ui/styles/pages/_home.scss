@@ -10,15 +10,3 @@
 ::-webkit-scrollbar {
     display: none;
 }
-
-.test:hover {
-  background:rgba(0,0,0,.7) !important;
-
-}
-.test {
-  position: absolute;
-height: 100%;
-width: 100%;
-z-index: 9;
-transition: all .3s ease-in-out;
-}

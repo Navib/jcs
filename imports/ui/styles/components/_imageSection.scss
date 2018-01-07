@@ -1,0 +1,124 @@
+/*************************
+    Home Img Section
+*************************/
+.image-section {
+    background: #3D72A4;
+    padding: 150px 200px 0 200px;
+
+    .image-section-title {
+        color: white;
+        font-size: calc(5em + 4px);
+        font-weight: 200;
+        text-align: center;
+        padding-bottom: 2em;
+        margin-top: 0;
+    }
+
+    .film-list {
+        padding: 0;
+    }
+
+    .single-img-wrapper {
+        padding: 0 !important;
+        margin: 0 !important;
+        height: 500px;
+        position: relative;
+        background-position: 0 0;
+        transition: all 0.3s ease-in-out;
+
+        .film-links {
+            text-decoration: none;
+            cursor: pointer;
+            text-decoration: none;
+            cursor: pointer;
+            text-align: center;
+            color: white;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .movie-overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            transition: all 0.4s ease-in-out;
+            visibility: hidden;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .overlay-title {
+                color: white;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .single-img-wrapper:hover {
+        background-position: 0 30%;
+        transition: all 0.3s ease-in-out;
+
+        .film-links {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .movie-overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background: rgba(60, 77, 93, 0.33);
+            transition: all 0.4s ease-in-out;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .film-links:hover {
+        transition: all 0.3s ease-in-out;
+        color: black;
+    }
+
+    .single-img-wrapper:first-child {
+        background-image: url('/images/films/secrets-lg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .single-img-wrapper:nth-child(2) {
+        background-image: url('/images/films/terms-lg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .single-img-wrapper:nth-child(3) {
+        background-image: url('/images/films/gatherer-lg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .single-img-wrapper:nth-child(4) {
+        background-image: url('/images/films/crimes-lg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.odd-ani {
+    position: relative;
+    right:3em;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    visibility:hidden;
+}
+.even-ani {
+    position: relative;
+    left:3em;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    visibility:hidden;
+}

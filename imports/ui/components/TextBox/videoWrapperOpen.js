@@ -1,8 +1,10 @@
 import {TweenMax, Power2, TimelineLite} from "gsap";
+import {FlowRouter} from 'meteor/kadira:flow-router';
 
 function videoWrapperLogic() {
   //Open Slide
-  $('.video-btn').on('click', function() {
+  $('.video-btn').on('click', function(e) {
+    e.preventDefault();
     let vidSlideWraper = $('.video-slide-wrapper');
     TweenMax.to(vidSlideWraper, .6, {
       width: "100%",
