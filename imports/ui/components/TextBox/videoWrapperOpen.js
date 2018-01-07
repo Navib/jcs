@@ -11,12 +11,12 @@ function videoWrapperLogic() {
     $('.exit-video-slide').css({display: 'block'});
     $('.video-container').css({display: 'block'});
     setTimeout(function() {
-      $('.exit-video-slide').css({opacity: 1});
+      $('.exit-video-slide, .video-title').css({opacity: 1});
       $('.video-container').css({opacity: 1});
 
 //Media Item On Open
       setTimeout(function() {
-        TweenMax.staggerTo(".jcs-media-item", .3, {
+        TweenMax.staggerTo(".jcs-media-item", .8, {
           opacity: 1,
           ease: Quart.easeInOut
         }, 0.4);

@@ -9,8 +9,9 @@ function videoWrapperClose() {
         ease: Quart.easeInOut
       });
     }, 800)
-    $('.exit-video-slide').css({});
+    $('.exit-video-slide, .video-title').css({opacity:0});
     $('.video-container').css({});
+    
 
 //Media Item on Close
     TweenMax.staggerTo(".jcs-media-item", .3, {
