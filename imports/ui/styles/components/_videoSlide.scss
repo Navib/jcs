@@ -1,34 +1,48 @@
 /* Video Reels Wrapper */
+.fa {
+  -webkit-text-stroke: 1px white !important;
+  transition: all 0.3 ease-in-out;
+  opacity: 1;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
 .video-slide-wrapper:before {
-  border: 2em solid black;
+  border: 1em solid black;
   position: absolute;
   content: "";
   top: 0;
   left: -0;
   width: 100%;
   height: 100%;
-  outline: 1px dashed #fff;
-  outline-offset: -10px;
+  outline: 1px dashed black;
+  outline-offset: -30px;
 }
 
 .video-slide-wrapper {
   height: 100vh;
-  width: 0;
+  width: 100%;
   position: absolute;
   top: 0;
   right: 0;
   background: white;
   z-index: 999;
   transition: all 0.8s ease-in-out;
+  background-image: url("assets/line_vid_gallery.jpg");
+  background-size: cover;
+  background-position: center;
+      animation: 14s linear 0s normal none infinite animate;
 
   .exit-video-slide {
     z-index: 9999;
     position: absolute;
-    top: 40px;
+    top: 30px;
     left: 40px;
     font-size: 30px;
     cursor: pointer;
-    opacity: 0;
+    opacity: 1;
     transition: all 0.4s ease-in-out;
     color: #444444;
     font-weight: 300;
@@ -43,14 +57,13 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 300;
-    font-size: 34px !important;
-    opacity: 0;
+    font-size: 44px !important;
+    opacity: 1;
     transition: all 0.4s ease-in-out;
   }
 
   .video-container {
-    display: none;
-    opacity: 0;
+    opacity: 1;
     transition: all 0.4s ease-in-out;
     height: 100vh;
     width: 100%;
@@ -84,7 +97,7 @@
         width: 500px;
         height: 300px;
         position: relative;
-        opacity: 0;
+        opacity: 1;
         transition: all 0.3s ease-in-out;
 
         .iframe-title {
@@ -96,6 +109,7 @@
         }
 
         iframe {
+          background: none !important;
           position: relative;
           width: 100%;
           height: 100%;

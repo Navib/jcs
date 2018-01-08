@@ -4,6 +4,7 @@ import Scrollbar from 'smooth-scrollbar';
 
 import White from '../section/White.jsx';
 import Black from '../section/Black.jsx';
+import AboutWhite from '../section/AboutWhite.jsx';
 import ImageSection from '../imageSection/ImageSection.jsx';
 
 
@@ -128,16 +129,38 @@ export default class Video extends Component {
         })
       },3000);
 
-
+      //Go to Personal Page
+      $('.exit-per-page').on('click', function(e) {
+        let speed = 1.0;
+        e.preventDefault();
+        let preloaderWrapper = $('.ShowPreloader');
+        TweenMax.to(preloaderWrapper, speed, {
+          top: "0",
+          visibility: 'visible',
+          ease: Quart.easeInOut
+        });
+        setTimeout(function() {
+          TweenMax.to(preloaderWrapper, speed, {
+            top: "-100%",
+            ease: Quart.easeInOut
+          });
+        },3000);
+        setTimeout(function() {
+          TweenMax.to(preloaderWrapper, speed, {
+            visibility: "hidden",
+            ease: Quart.easeInOut
+          });
+        },3600);
+        setTimeout(function() {
+          FlowRouter.go('/');
+        },4000);
+      });
 }
-
 
   render() {
     return (
       <div id="home-page" className="home-page" >
-
         <div className="fullscreen-bg" >
-
           <div className="video-overlay">
             <div className="hvr-box fade-out">
               <h1 className="video-header-text">JS.</h1>
@@ -146,13 +169,14 @@ export default class Video extends Component {
           </div>
 
           <div className="video-wrapper">
-          <video loop muted autoPlay   preload="none" className="fullscreen-bg__video embed-responsive-item" id="home-video">
+          <video loop autoPlay   preload="none" className="fullscreen-bg__video embed-responsive-item" id="home-video">
             <source src="videos/demoReel.mp4" type="video/mp4" />
           </video>
           </div>
         </div>
 
         <White />
+        <AboutWhite />
         <ImageSection />
         <Black />
 

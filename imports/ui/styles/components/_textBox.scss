@@ -1,12 +1,12 @@
 /*TextBox Styles*/
 .jcs-text-box {
   a {
-    color:#333;
+    color: #333;
   }
   //border: 1px solid black;
   width: 30%;
   flex-basis: 50%;
-  margin: 8em 6em;
+  //margin: 8em 6em;
   box-shadow: 0 5px 26px 0 rgba(0,0,0,0.22), 0 20px 28px 0 rgba(0,0,0,0.30);
   background: white;
 
@@ -16,20 +16,21 @@
     height: 100%;
     justify-content: center;
     align-items: center;
+    align-content: space-around;
     flex-wrap: wrap;
-    padding: 3em;
+    padding: 4em;
 
     .jcs-bx-header {
-      font-size: 26px;
-      width: 100%;
+      font-size: 40px;
+      //width: 100%;
       text-transform: uppercase;
       font-family: 'Raleway', sans-serif;
     }
 
     .jcs-bx-description {
-      font-size: calc(1em + 4px);
+      font-size: calc(1em + 5px);
       width: 100%;
-      line-height: calc(1em + 8px);
+      line-height: calc(1em + 16px);
       font-family: 'Raleway', sans-serif;
     }
 
@@ -43,11 +44,17 @@
       .actor-sites {
         display: flex;
         justify-content: space-around;
-        padding: 0;
-        margin: 0;
+        font-size: 21px;
+        width: 290px;
+        margin: 0 auto;
+        padding-left: 0;
 
-        li {
+        li:nth-child(1) {
           list-style-type: none;
+        }
+        li {
+
+          text-transform: uppercase;
         }
 
         .social-bg {
@@ -107,12 +114,12 @@
   padding: 0;
   font-family: "arial",heletica,sans-serif;
   font-size: 12px;
-  background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
-  -webkit-animation: 10s linear 0s normal none infinite animate;
-  -moz-animation: 10s linear 0s normal none infinite animate;
-  -ms-animation: 10s linear 0s normal none infinite animate;
-  -o-animation: 10s linear 0s normal none infinite animate;
-  animation: 10s linear 0s normal none infinite animate;
+  background: white url('assets/white-abstract-home.jpg') repeat 0 0;
+  -webkit-animation: 14s linear 0s normal none infinite animate;
+  -moz-animation: 14s linear 0s normal none infinite animate;
+  -ms-animation: 14s linear 0s normal none infinite animate;
+  -o-animation: 14s linear 0s normal none infinite animate;
+  animation: 14s linear 0s normal none infinite animate;
 }
 @-webkit-keyframes animate {
   from {

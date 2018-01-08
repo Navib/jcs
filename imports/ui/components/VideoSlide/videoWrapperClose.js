@@ -1,25 +1,31 @@
 import {TweenMax, Power2, TimelineLite} from "gsap";
 
 function videoWrapperClose() {
-  $('.exit-video-slide').on('click', function() {
-    setTimeout(function() {
-      let vidSlideWraper = $('.video-slide-wrapper');
-      TweenMax.to(vidSlideWraper, .6, {
-        width: "0%",
+  $('.exit-video-slide').on('click', function(e) {
+      let speed = 1.0;
+      e.preventDefault();
+      let preloaderWrapper = $('.ShowPreloader');
+      TweenMax.to(preloaderWrapper, speed, {
+        top: "0",
+        visibility: 'visible',
         ease: Quart.easeInOut
       });
-    }, 800)
-    $('.exit-video-slide, .video-title').css({opacity:0});
-    $('.video-container').css({});
-    
-
-//Media Item on Close
-    TweenMax.staggerTo(".jcs-media-item", .3, {
-      opacity: 0,
-      ease: Quart.easeInOut
-    }, 0.4);
-  });
-
+      setTimeout(function() {
+        TweenMax.to(preloaderWrapper, speed, {
+          top: "-100%",
+          ease: Quart.easeInOut
+        });
+      },3000);
+      setTimeout(function() {
+        TweenMax.to(preloaderWrapper, speed, {
+          visibility: "hidden",
+          ease: Quart.easeInOut
+        });
+      },3600);
+      setTimeout(function() {
+        FlowRouter.go('/');
+      },4000);
+    });
 }
 
 module.exports = videoWrapperClose;

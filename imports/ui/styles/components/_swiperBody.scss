@@ -8,6 +8,7 @@
   width: 100%;
   display: flex;
 
+
   .swiper-container {
     width: 100%;
     height: 100%;
@@ -41,21 +42,25 @@
 
     .swiper-button-prev {
       top: 20px !important;
-      transform: rotate(90deg) translateX(-50%) !important;
-      left: 50% !important;
+      transform: rotate(90deg) translateX(-43%) !important;
+      left: 43% !important;
       margin: 0 !important;
     }
     .swiper-button-next {
       bottom: 0 !important;
-      transform: rotate(90deg) translateX(-50%) !important;
-      left: 50% !important;
+      transform: rotate(90deg) translateX(-43%) !important;
+      left: 43% !important;
       top: inherit !important;
       margin: 0 !important;
     }
     .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-      background-color: white !important;
+      background-color: black !important;
     }
-
+    .swiper-pagination-progressbar {
+    background: white !important;
+    position: absolute;
+    border-right: 1px solid black !important;
+}
     .swiper-pagination {
       right: auto !important;
       width: 6px;

@@ -9,9 +9,7 @@ class VideoSlide extends Component {
   }
   componentDidMount(){
     videoWrapperClose();
-    setTimeout(function(){
-      initializeSwiper3d();
-    },4000)
+    initializeSwiper3d();
   }
 
 
@@ -19,7 +17,7 @@ class VideoSlide extends Component {
   render(){
     return (
       <div className="video-slide-wrapper">
-        <div className="exit-video-slide">EXIT</div>
+        <div className="exit-video-slide"><i className="fa fa-home" aria-hidden="true"></i></div>
         <h1 className="video-title">Media Gallery</h1>
         <div className="video-container">
           <div className="video-wrapper">

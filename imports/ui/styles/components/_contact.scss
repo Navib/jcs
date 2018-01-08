@@ -1,15 +1,15 @@
 /* Contact Styles */
-
 .jcs-contact-wrapper {
   height: 0;
   width: 100%;
-  background: blue;
+  background: #545454;
   position: absolute;
   bottom: 0;
   z-index: 9999;
 
   .exit-contact-wrapper {
     position: relative;
+
     .exit-contact-btn {
       position: absolute;
       color: white;
@@ -17,4 +17,55 @@
       top: 1em;
     }
   }
+
+  .flex-contact {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    transition: all 0.3s ease-in-out;
+
+    .flex-50 {
+      flex-basis: 45%;
+      display: flex;
+      background: white;
+      height: 70%;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-wrap: wrap;
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+
+      h3 {
+        text-transform: capitalize;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        bottom: 1em;
+      }
+    }
+
+    .flex-item {
+      flex-basis: 100%;
+      text-align: center;
+      font-size: 21px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      line-height: 2em;
+    }
+  }
+}
+
+.exit-contact-btn:before {
+      border-top: 1px solid white !important;
+}
+.exit-contact-btn:after {
+      border-top: 1px solid white !important;
+}
+.exit-contact-btn:hover {
+  transform: rotate(180deg);
 }
