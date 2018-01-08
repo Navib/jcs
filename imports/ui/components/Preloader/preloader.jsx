@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {TweenMax, Power2, TimelineLite} from "gsap";
 
 class Preloader extends Component {
@@ -6,12 +6,11 @@ class Preloader extends Component {
     super();
 
   }
-  componentDidMount(){
-  }
+  componentDidMount() {}
 
   render() {
     return (
-        <div className="preload">JCS</div>
+      <div className="preload">JCS</div>
     );
   }
 }

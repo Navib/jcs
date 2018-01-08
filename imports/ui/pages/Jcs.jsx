@@ -10,10 +10,12 @@ import Preloader from '../../ui/components/Preloader/preloader';
 
 // This component - represents a single page
 export const Jcs = () => <div>
-    <div className="jcs-person " id="desktop-sites">
-      <div className="exit-per-page"><i className="fa fa-home" aria-hidden="true"></i></div>
-      <Video />
-      <Contact />
+  <div className="jcs-person " id="desktop-sites">
+    <div className="exit-per-page">
+      <i className="fa fa-home" aria-hidden="true"></i>
     </div>
-    <div className="ShowPreloader"><Preloader /></div>
+    <Video/>
+    <Contact/>
+  </div>
+  <div className="ShowPreloader"><Preloader/></div>
 </div>

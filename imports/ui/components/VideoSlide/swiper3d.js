@@ -2,7 +2,7 @@
 import Swiper from 'swiper/dist/js/swiper.min.js';
 import React from 'react';
 
-function initializeSwiper3d(){
+function initializeSwiper3d() {
   var swiper3d = new Swiper('.swiper-3d-container', {
     effect: 'coverflow',
     grabCursor: true,
@@ -13,18 +13,16 @@ function initializeSwiper3d(){
       stretch: 0,
       depth: 100,
       modifier: 1,
-      slideShadows : false,
+      slideShadows: false
     },
     pagination: {
-      el: '.swiper-3d-pagination',
+      el: '.swiper-3d-pagination'
     },
-    loop:false,
+    loop: false
   });
 
   return swiper3d;
 
 }
-
-
 
 module.exports = initializeSwiper3d;

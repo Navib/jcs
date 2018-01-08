@@ -5,8 +5,8 @@ import Preloader from '../../ui/components/Preloader/preloader';
 
 // This component - represents a single page
 export const VideoPage = () => <div>
-    <div className="jcs-person " id="desktop-sites">
-      <VideoSlide />
-    </div>
-    <div className="ShowPreloader"><Preloader /></div>
+  <div className="jcs-person " id="desktop-sites">
+    <VideoSlide/>
+  </div>
+  <div className="ShowPreloader"><Preloader/></div>
 </div>

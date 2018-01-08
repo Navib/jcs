@@ -16,10 +16,9 @@ function loadYtVideos() {
     }, {
       _id: 4,
       src: 'https://www.youtube.com/embed/feufY7NFbPo?modestbranding=1&autohide=1&showinfo=0&controls=0'
-    },
-    {
-      _id:5,
-      src:'https://player.vimeo.com/video/212488303?&title=0&byline=0&portrait=0'
+    }, {
+      _id: 5,
+      src: 'https://player.vimeo.com/video/212488303?&title=0&byline=0&portrait=0'
     }
   ];
 

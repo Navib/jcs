@@ -2,32 +2,31 @@ import {TweenMax, Power2, TimelineLite} from "gsap";
 import {FlowRouter} from 'meteor/kadira:flow-router';
 
 function jcsPerLogic() {
-  //Open Slide
+  //Go to Personal Page
   $('.jcs-btn').on('click', function(e) {
+    let speed = 1.0;
     e.preventDefault();
-    let vidSlideWraper = $('.video-slide-wrapper');
-    TweenMax.to(vidSlideWraper, .6, {
-      width: "100%",
+    let preloaderWrapper = $('.ShowPreloader');
+    TweenMax.to(preloaderWrapper, speed, {
+      top: "0",
+      visibility: 'visible',
       ease: Quart.easeInOut
     });
-    $('.exit-video-slide').css({display: 'block'});
-    $('.video-container').css({display: 'block'});
     setTimeout(function() {
-      $('.exit-video-slide, .video-title').css({opacity: 1});
-      $('.video-container').css({opacity: 1});
-
-  //Media Item On Open
-      setTimeout(function() {
-        TweenMax.staggerTo(".jcs-media-item", .8, {
-          opacity: 1,
-          ease: Quart.easeInOut
-        }, 0.4);
-      }, 1000);
-    }, 1400)
-
-    setTimeout(function(){
+      TweenMax.to(preloaderWrapper, speed, {
+        top: "-100%",
+        ease: Quart.easeInOut
+      });
+    }, 3000);
+    setTimeout(function() {
+      TweenMax.to(preloaderWrapper, speed, {
+        visibility: "hidden",
+        ease: Quart.easeInOut
+      });
+    }, 3600);
+    setTimeout(function() {
       FlowRouter.go('/jcs');
-    },2000);
+    }, 4000);
   });
 
 }
