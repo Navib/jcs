@@ -8,8 +8,7 @@ class TextBox extends Component {
   }
 
   componentDidMount() {
-    PerWrapperOpen();
-    videoWrapperOpen();
+
   }
   render() {
     return (
@@ -28,13 +27,23 @@ class TextBox extends Component {
           <div className="jcs-menu-icon">
             <ul className="social-list">
               <li>
-                <a href="#" className="txtBdy-btn video-page-btn" data-balloon="Video Gallery" data-balloon-pos="up">
-                  <i className="icon ion-ios-film video-btn" aria-hidden="true"></i>
+                <a href="#" className="txtBdy-btn" data-balloon="Facebook" data-balloon-pos="up">
+                  <i className="icon ion-social-facebook" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a href="#" className="txtBdy-btn jcs-btn" data-balloon="Biography" data-balloon-pos="up">
-                  <i className="icon ion-film-marker " aria-hidden="true"></i>
+                <a href="#" className="txtBdy-btn" data-balloon="Instagram" data-balloon-pos="up">
+                  <i className="icon ion-social-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" className="txtBdy-btn" data-balloon="Snapchat" data-balloon-pos="up">
+                  <i className="icon ion-social-snapchat" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" className="txtBdy-btn" data-balloon="Vimeo" data-balloon-pos="up">
+                  <i className="icon ion-social-vimeo" aria-hidden="true"></i>
                 </a>
               </li>
               <li>

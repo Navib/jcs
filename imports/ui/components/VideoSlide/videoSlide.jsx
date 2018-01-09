@@ -8,16 +8,12 @@ class VideoSlide extends Component {
     super(props);
   }
   componentDidMount() {
-    videoWrapperClose();
     initializeSwiper3d();
   }
 
   render() {
     return (
       <div className="video-slide-wrapper">
-        <div className="exit-video-slide">
-          <i className="fa fa-home" aria-hidden="true"></i>
-        </div>
         <h1 className="video-title">Media Gallery</h1>
         <div className="video-container">
           <div className="video-wrapper">

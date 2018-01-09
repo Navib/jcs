@@ -7,19 +7,6 @@
   overflow: inherit !important;
 }
 
-.exit-per-page {
-  position: fixed;
-  top: 30px;
-  left: 30px;
-  color: white;
-  font-size: 2em;
-  z-index: 999;
-  cursor: pointer;
-
-  i {
-    -webkit-text-stroke: 1px black !important;
-  }
-}
 
 .fullscreen-bg {
   width: 100%;

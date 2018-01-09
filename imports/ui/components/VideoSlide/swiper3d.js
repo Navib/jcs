@@ -18,7 +18,10 @@ function initializeSwiper3d() {
     pagination: {
       el: '.swiper-3d-pagination'
     },
-    loop: false
+    loop: false,
+    preloadImages: true,
+    lazy: true,
+    watchSlidesVisibility: true
   });
 
   return swiper3d;

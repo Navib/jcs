@@ -40,11 +40,11 @@ export default class Video extends Component {
       }
 
       if (turnBlack < currentPos) {
-        $('#menu-btn i').css({'color': 'black', 'transition': 'all .3s ease-in-out'});
+        $('#menu-btn i').css({'color': 'black', 'transition': 'all .3s ease-in-out','-webkit-text-stroke': '1px white !important'});
         $('#sidebar-btn i').css({'color': 'black', 'transition': 'all .3s ease-in-out'});
         $('.branding').css({'color': 'black', 'transition': 'all .3s ease-in-out'});
       } else {
-        $('#menu-btn i').css({'color': 'white', 'transition': 'all .3s ease-in-out'});
+        $('#menu-btn i').css({'color': 'white', 'transition': 'all .3s ease-in-out','-webkit-text-stroke': '1px black !important'});
         $('#sidebar-btn i').css({'color': 'white', 'transition': 'all .3s ease-in-out'});
         $('.branding').css({'color': 'white', 'transition': 'all .3s ease-in-out'});
       }
@@ -76,33 +76,6 @@ export default class Video extends Component {
     setTimeout(function() {
       $('.video-overlay').css({'background': 'rgba(0, 0, 0, .2)', 'transition': 'all 2s ease-in-out'})
     }, 3000);
-
-    //Go to Personal Page
-    $('.exit-per-page').on('click', function(e) {
-      let speed = 1.0;
-      e.preventDefault();
-      let preloaderWrapper = $('.ShowPreloader');
-      TweenMax.to(preloaderWrapper, speed, {
-        top: "0",
-        visibility: 'visible',
-        ease: Quart.easeInOut
-      });
-      setTimeout(function() {
-        TweenMax.to(preloaderWrapper, speed, {
-          top: "-100%",
-          ease: Quart.easeInOut
-        });
-      }, 3000);
-      setTimeout(function() {
-        TweenMax.to(preloaderWrapper, speed, {
-          visibility: "hidden",
-          ease: Quart.easeInOut
-        });
-      }, 3600);
-      setTimeout(function() {
-        FlowRouter.go('/');
-      }, 4000);
-    });
   }
 
   render() {
@@ -128,7 +101,6 @@ export default class Video extends Component {
         <AboutWhite/>
         <ImageSection/>
         <Black/>
-
       </div>
     );
   }

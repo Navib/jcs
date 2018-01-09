@@ -18,7 +18,7 @@
   width: 100%;
   height: 100%;
   outline: 1px dashed black;
-  outline-offset: -30px;
+  outline-offset: -50px;
 }
 
 .video-slide-wrapper {
@@ -28,7 +28,7 @@
   top: 0;
   right: 0;
   background: white;
-  z-index: 999;
+  z-index: 990;
   transition: all 0.8s ease-in-out;
   background-image: url("assets/line_vid_gallery.jpg");
   background-size: cover;

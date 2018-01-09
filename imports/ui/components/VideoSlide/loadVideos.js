@@ -25,9 +25,10 @@ function loadYtVideos() {
   let jcsVideos = ytVids.map((item) => (
     <div className="jcs-media-item swiper-slide video-3d-slide" key={item._id}>
       <div className="iframe-title ">INFO TEXT</div>
-      <iframe className="cs-iframe" frameBorder="0" src={item.src} allowFullScreen allowTransparency="true" style={{
+      <iframe className="cs-iframe swiper-lazy" frameBorder="0" data-src={item.src} allowFullScreen allowTransparency="true" style={{
         background: '#ffffff'
       }}></iframe>
+      <div className="swiper-lazy-preloader"></div>
     </div>
   ))
 

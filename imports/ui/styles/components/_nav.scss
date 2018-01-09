@@ -1,57 +1,119 @@
-/* Nav Bar Styles */
-.jcs-nav {
-  width: 100%;
-  margin: 0 auto;
+/********************
+    Nav Styles
+********************/
+#nav {
+  color: white;
   position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 99;
+  bottom: 0;
+  padding: 0;
+  z-index: 9999;
+}
 
-  .jcs-menu-box {
-    width: 100%;
+.nav-wrapper {
+  color: white;
+  background: #010001;
+  height: 100vh;
+  width: 0;
+  transition: all 0.4 ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+}
 
-    div {
-      a {
-        font-size: 32px;
-        cursor: pointer;
-      }
+.overflow-hide {
+  width: 100%;
+  height: 100%;
+  overflow: hidden !important;
+}
 
-      a:hover {
-        text-decoration: none;
-      }
+.grey-text {
+  color: #bbbbbb;
+  font-weight: 200;
+  transition: all 0.2s ease-in-out;
+}
+
+.grey-text:hover {
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-items {
+  position: fixed;
+  right: 2em;
+  top: 12px;
+  z-index: 999;
+  font-size: 1.5em;
+  display: flex;
+
+  #menu-btn {
+    i {
+      padding: 0 0.5em;
+      cursor: pointer;
+      color: white;
     }
   }
 
-  .jcs-menu {
-    left: 0;
-    border-bottom: 1px solid black;
-    width: 200px;
-    height: 50px;
+  #sidebar-btn {
+    i {
+      cursor: pointer;
+      padding: 0 0.5em;
+      color: white;
+    }
+  }
+}
+
+.branding {
+  position: fixed;
+  left: 1em;
+  top: 10px;
+  z-index: 999;
+  font-size: calc(2em + 4px);
+  font-weight: 200;
+  color: white;
+  background: -webkit-linear-gradient(#fff, #333);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+}
+
+.video-items {
+  position: fixed;
+  bottom: 12px;
+  z-index: 999;
+  display: flex;
+
+  #btm-left-video {
     position: absolute;
-    top: 3em;
-    transition: all 0.7s ease-in-out;
-    transition-delay: 0.1s;
+    left: 4em;
+    bottom: 2em;
+
+    i {
+      padding: 0 0.5em;
+      cursor: pointer;
+    }
   }
 
-  .jcs-contact {
-    right: 0;
-    border-bottom: 1px solid black;
-    width: 200px;
-    height: 50px;
+  #btm-right-video {
     position: absolute;
-    top: 3em;
-  }
+    right: 4em;
+    bottom: 2em;
 
-  #exit-nav {
-    position: absolute;
-    left: -22px;
-    bottom: -24px;
-    font-size: 32px;
-    font-weight: 200;
-    visibility: hidden;
-    opacity: 0;
-    transform: scale(0);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
+    i {
+      cursor: pointer;
+      padding: 0 0.5em;
+    }
   }
+}
+/*****************
+    Nav items
+*****************/
+#nav-items {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999;
 }
