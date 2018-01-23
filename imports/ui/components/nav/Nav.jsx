@@ -14,6 +14,7 @@ export default class Nav extends Component {
   componentDidMount(){
     let triggerMenu= false;
     $('#menu-btn').on('click', function() {
+console.log("message");
 
       triggerMenu = !triggerMenu;
 

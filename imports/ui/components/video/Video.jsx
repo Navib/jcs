@@ -35,8 +35,8 @@ export default class Video extends Component {
         $('#btm-left-video').css({'left': '1em', 'opacity': '0', 'visibility': 'hidden', 'transition': 'all .3s ease-in-out'});
         $('#btm-right-video').css({'right': '1em', 'opacity': '0', 'visibility': 'hidden', 'transition': 'all .3s ease-in-out'});
       } else {
-        $('#btm-left-video').css({'left': '4em', 'opacity': '1', 'visibility': 'visible', 'transition': 'all .3s ease-in-out'});
-        $('#btm-right-video').css({'right': '4em', 'opacity': '1', 'visibility': 'visible', 'transition': 'all .3s ease-in-out'});
+        $('#btm-left-video').css({'left': '2em', 'opacity': '1', 'visibility': 'visible', 'transition': 'all .3s ease-in-out'});
+        $('#btm-right-video').css({'right': '2em', 'opacity': '1', 'visibility': 'visible', 'transition': 'all .3s ease-in-out'});
       }
 
       if (turnBlack < currentPos) {
