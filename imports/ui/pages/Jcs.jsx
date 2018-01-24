@@ -5,6 +5,7 @@ import NavWrapper from '../../ui/components/nav/NavWrapper.jsx';
 import Video from '../../ui/components/video/Video';
 import Contact from '../../ui/components/Contact/contact';
 import Preloader from '../../ui/components/Preloader/preloader';
+import PortBody from '../../ui/components/Portfolio/portBody';
 
 // This component - represents a single page
 export const Jcs = () => <div>
@@ -12,7 +13,7 @@ export const Jcs = () => <div>
     <Nav />
     <NavWrapper />
 
-    <Video/>
+    <PortBody />
     <Contact/>
   </div>
   <div className="ShowPreloader"><Preloader/></div>

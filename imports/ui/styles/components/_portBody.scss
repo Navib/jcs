@@ -1,0 +1,84 @@
+//PortBody Styles
+
+.p-body {
+  width: 100%;
+
+  .b {
+    border: 1px solid black;
+    height: 400px;
+    width: 100%;
+  }
+
+  .container-wrapper {
+    width: 100%;
+
+    .swiper-testimonial {
+      .testTitle {
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        top: 2em;
+        text-align: center;
+      }
+      .testimonial-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+        .quote-block {
+          font-size: calc(.8em + 2px);
+          line-height: calc(.8em + 12px);
+          font-style: italic;
+          width: 80%;
+          margin: 0 auto;
+          padding-top: 2em;
+        }
+
+        .credit-block {
+          margin-top: 1em;
+          font-weight: bold;
+          position: relative;
+        }
+
+        .credit-block:before {
+          content: '';
+          position: absolute;
+          bottom: -1em;
+          width: 40px;
+          height: 4px;
+          background: #6063c1;
+          margin: 0 auto;
+          left: 50%;
+          transform: translateX(-50%);
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
